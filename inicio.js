@@ -1,6 +1,7 @@
 const iniciar = {
-
-  boton.addEventListener("click", boton.presionar)
+  iniciar(){
+    boton.addEventListener("click", boton.presionar)
+  }
 
 }
 
@@ -10,4 +11,4 @@ const boton = {
   }
 }
 
-window.addEventListener("load", iniciar)
+window.addEventListener("load", iniciar.iniciar)
