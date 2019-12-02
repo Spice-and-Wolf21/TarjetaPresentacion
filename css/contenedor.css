@@ -17,9 +17,10 @@
 .contenedor{
     position: relative;
     width: 70%;
-    padding: 35%;
+    padding: 3% 5%;
     max-width: 600px;
     margin: auto;
+    backrgouund: #fff;
 }
 footer{
     background: #f3f3f3;
