@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: cursive;
     outline: 1px solid red;
 }
 
@@ -12,30 +13,43 @@
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    background: #c3c3c3;
+    background:rgb(230, 240, 255);
 }
 .contenedor{
     position: relative;
-    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 65%;
     max-width: 600px;
     margin: auto;
 }
+.cabecera{
+    padding: 1em;
+    width: 100%;
+    background: rgb(100, 190,250);
+    color: white;
+    text-transform: uppercase;
+}
+.cuerpo{
+    padding: 1em;
+}
+.cuerpo div{
+    padding: 0.5em;
+}
 footer{
     background: #f3f3f3;
+    padding: 1em;
 }
 .imagenes {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
 }
-.imagenes figcaption{
-    /* width: 33.3%; */
-}
-.imagenes img:nth-child(1){
+.imagenes img:nth-child(n){
     display: block;
     /* width: 100%; */
-    max-width: 150px;;
+    max-width: 150px;
 }
-.imagenes > figcaption:last-child{
-    /* max-width: 500px; */
+.imagenes > figcaption:nth-last-child(){
+    max-width: 500px;
 }
