@@ -17,12 +17,18 @@
 }
 .contenedor{
     position: relative;
+<<<<<<< HEAD
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 65%;
+=======
+    width: 70%;
+    padding: 3% 5%;
+>>>>>>> bdf1e8da32351c59952d5f3518d6bef83ba859d6
     max-width: 600px;
     margin: auto;
+    backrgouund: #fff;
 }
 .cabecera{
     padding: 1em;
