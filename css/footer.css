@@ -1,0 +1,13 @@
+footer{
+    background: #eeeeee;
+    padding: 1em;
+}
+.imagenes {
+    display: flex;
+    flex-flow: row wrap;
+}
+.imagenes img:nth-child(n){
+    display: block;
+    /* width: 100%; */
+    max-width: 150px;
+}

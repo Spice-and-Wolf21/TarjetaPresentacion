@@ -1,0 +1,26 @@
+.cabecera{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+    /* background: rgba(5, 47, 110, 0.308); */
+    /* color: white; */
+    text-transform: uppercase;
+}
+.cabecera .titulo{
+    /* width: 100%; */
+    max-width: 270px;
+    padding: 10px;
+}
+.cabecera .logo {
+    max-width: 270px;
+    border-radius: 50%;
+    border: 1.5px solid #cccccc;
+    overflow: hidden;
+}
+.cabecera img{
+    position: relative;
+    display: block;
+    width: 100%;
+}

@@ -6,56 +6,36 @@
 }
 
 .wrapper{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     text-align: center;
     background:rgb(230, 240, 255);
 }
 .contenedor{
-    position: relative;
-<<<<<<< HEAD
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     width: 65%;
-=======
     width: 70%;
-    padding: 3% 5%;
->>>>>>> bdf1e8da32351c59952d5f3518d6bef83ba859d6
-    max-width: 600px;
     margin: auto;
-    backrgouund: #fff;
-}
-.cabecera{
-    padding: 1em;
-    width: 100%;
-    background: rgb(100, 190,250);
-    color: white;
-    text-transform: uppercase;
 }
 .cuerpo{
+    width: 100%;
     padding: 1em;
 }
 .cuerpo div{
     padding: 0.5em;
 }
-footer{
-    background: #f3f3f3;
-    padding: 1em;
-}
-.imagenes {
+.datos div{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    justify-items: left;
 }
-.imagenes img:nth-child(n){
+.datos span{
     display: block;
-    /* width: 100%; */
-    max-width: 150px;
+    width: 45%;
 }
-.imagenes > figcaption:nth-last-child(){
-    max-width: 500px;
+.datos > div > span:nth-child(n){
+    padding-right: 10px;
+    text-align: right;
+}
+.datos > div > span:nth-child(2n){
+    text-align: left;
 }
