@@ -2,40 +2,60 @@
     padding: 0;
     margin: 0;
     font-family: cursive;
-    outline: 1px solid red;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 .wrapper{
-    text-align: center;
-    background:rgb(230, 240, 255);
+    /* background-color: #1b1a0b; */
+    /* background-color: -webkit-linear-gradient(#ccc, #ccc, to-left); */
+    /*31 14 75*/
+    background-image: -webkit-linear-gradient(90deg, rgb(31, 14, 75), rgb(43, 22, 13));
+    background-image: -moz-linear-gradient(90deg, rgb(31, 14, 75), rgb(43, 22, 13));
+    position: relative;
 }
 .contenedor{
-    width: 65%;
-    width: 70%;
+    /* width: 70%; */
+    /* width: 100%; */
     margin: auto;
+    color: rgb(228, 228, 228);
 }
 .cuerpo{
-    width: 100%;
-    padding: 1em;
+    /* width: 100%; */
+    padding: 20px 0;
 }
-.cuerpo div{
-    padding: 0.5em;
+.cuerpo > div{
+    padding: 10px;
 }
-.datos div{
-    width: 100%;
+.datos > div{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    justify-items: left;
+    width: 30%;
 }
 .datos span{
     display: block;
     width: 45%;
+    padding: 5px 0;
+    font-size: 15px;
 }
-.datos > div > span:nth-child(n){
-    padding-right: 10px;
-    text-align: right;
+.datos > div > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    justify-items: left;
+    width: 100%;
 }
-.datos > div > span:nth-child(2n){
+.datos > div > div > span:nth-child(n){
+    /* padding-right: 10px; */
     text-align: left;
 }
+.datos:nth-child(3){
+    background: red;
+}
+@media (max-width: 700px){
+    .datos > div{
+        width: 100%;
+    }
+}
+

@@ -1,26 +1,45 @@
 .cabecera{
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 1em;
+    align-items: center;
+    /* padding: 10px; */
     width: 100%;
-    /* background: rgba(5, 47, 110, 0.308); */
-    /* color: white; */
+    background-image: url("../img/fondos/fondo8.jpeg");
+    background-size: cover;
     text-transform: uppercase;
+}
+.difuminado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 10, .25);
 }
 .cabecera .titulo{
     /* width: 100%; */
     max-width: 270px;
+    text-align: center;
     padding: 10px;
+    color: rgb(21, 28, 65);
+    z-index: 100;
 }
 .cabecera .logo {
     max-width: 270px;
     border-radius: 50%;
     border: 1.5px solid #cccccc;
     overflow: hidden;
+    z-index: 100;
 }
 .cabecera img{
     position: relative;
     display: block;
     width: 100%;
+}
+@media (max-width: 500px){
+    .cabecera{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
 }

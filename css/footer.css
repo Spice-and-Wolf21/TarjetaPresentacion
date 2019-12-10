@@ -1,13 +1,28 @@
 footer{
-    background: #eeeeee;
-    padding: 1em;
+    padding: 30px;
 }
 .imagenes {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 30px;
 }
 .imagenes img:nth-child(n){
     display: block;
     /* width: 100%; */
     max-width: 150px;
+}
+.imagenes-dos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.imagenes-dos img{
+    display: block;
+    width: 70%;
+}
+footer blockquote{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
