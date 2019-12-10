@@ -19,7 +19,8 @@ footer{
 }
 .imagenes-dos img{
     display: block;
-    width: 70%;
+    width: 100%;
+    max-width: 240px;
 }
 footer blockquote{
     display: flex;
