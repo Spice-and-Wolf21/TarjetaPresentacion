@@ -7,16 +7,18 @@
   <link rel="icon" href="">
   <title>Tarjeta de presentacion</title>
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/contenedor.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/cajas.css">
 </head>
 <body>
   <section class="wrapper">
     <section class="contenedor">
       <header class="cabecera">
         <div class="difuminado"></div>
-        <div class="titulo">  
+        <div class="titulo">
           <h2>
             Tarjeta de presentación
           </h2>
@@ -27,11 +29,19 @@
           </figcaption>
         </div>
       </header>
-      <article class="cuerpo">
-        <div>
+      <div class="sepadador"></div>
+      <article id="contenedor" class="cuerpo">
+        <div class="menu">
+          <ul>
+            <li v-for="(item, index) of menu">
+              <span :class="[item?'active':'']" @click="menuSeleccionar(index)">{{index}}</span>
+            </li>
+          </ul>
+        </div>
+        <div >
           <h2>Desarrollador web</h2>
         </div>
-        <div class="datos">
+        <article v-if="menu.info" class="datos">
           <div>
             <div>
               <span>Nombres: </span>
@@ -58,28 +68,31 @@
               <span>21</span>
             </div>
           </div>
-        </div>
-        <div>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quaerat magnam odit assumenda hic itaque voluptatibus inventore neque praesentium aperiam?
-        </div>
+          <footer>
+              <article class="imagenes">
+                <figcaption><img src="img/html5.png"></figcaption>
+                <figcaption><img src="img/css3.png"></figcaption>
+                <figcaption><img src="img/js.png"></figcaption>
+                <figcaption><img src="img/vuejs.png"></figcaption>
+              </article>
+              <article class="imagenes-dos">
+              </article>
+              <article class="info">
+                <blockquote>
+                  <span>Correo:<address>giannluiggi.18@hotmail.com</address></span>
+                  <span>Redes Sociales <br> <a class="facebook-icon" href="https://www.facebook.com/luiggi.checa"></a> </span>
+                </blockquote>
+              </article>
+            </footer>
+        </article >
+        <article v-if="menu.cajas" class="datos">
+            <div id="seccionCajas" class="gameCajas">
+            </div>
+        </article>
       </article>
-      <footer>
-        <article class="imagenes">
-          <figcaption><img src="img/html5.png"></figcaption>
-          <figcaption><img src="img/css3.png"></figcaption>
-          <figcaption><img src="img/js.png"></figcaption>
-        </article>
-        <article class="imagenes-dos">
-          <figcaption><img src="img/vuejs.png"></figcaption>
-        </article>
-        <article class="info">
-          <blockquote>
-            <span>Correo:<address>giannluiggi.18@hotmail.com</address></span>
-            <span>Redes Sociales <br> <a class="facebook-icon" href="https://www.facebook.com/luiggi.checa"></a> </span>
-          </blockquote>
-        </article>
-      </footer>
     </section>
   </section>
+  <script src="js/lib/vue.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

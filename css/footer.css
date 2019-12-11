@@ -7,20 +7,20 @@ footer{
     justify-content: center;
     padding-bottom: 30px;
 }
-.imagenes img:nth-child(n){
-    display: block;
-    /* width: 100%; */
+.imagenes figcaption{
     max-width: 150px;
 }
-.imagenes-dos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-.imagenes-dos img{
+.imagenes img{
     display: block;
     width: 100%;
-    max-width: 240px;
+}
+.imagenes figcaption:nth-child(3)> img{
+    padding: 25% 20%;
+    max-width: 200px;
+}
+.imagenes figcaption:nth-child(4)> img{
+    padding: 35% 5%;
+    max-width: 400px;
 }
 footer blockquote{
     display: flex;

@@ -10,8 +10,8 @@
     /* background-color: #1b1a0b; */
     /* background-color: -webkit-linear-gradient(#ccc, #ccc, to-left); */
     /*31 14 75*/
-    background-image: -webkit-linear-gradient(90deg, rgb(31, 14, 75), rgb(43, 22, 13));
-    background-image: -moz-linear-gradient(90deg, rgb(31, 14, 75), rgb(43, 22, 13));
+    background-image: -webkit-linear-gradient(110deg, rgb(31, 14, 75), rgb(43, 22, 13));
+    background-image: -moz-linear-gradient(110deg, rgb(31, 14, 75), rgb(43, 22, 13));
     position: relative;
 }
 .contenedor{
@@ -20,18 +20,27 @@
     margin: auto;
     color: rgb(228, 228, 228);
 }
+.sepadador{
+    height: 15px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(90deg, rgb(44, 13, 13), rgb(66, 6, 6));
+    background-image: -moz-linear-gradient(90deg, rgb(44, 13, 13), rgb(66, 6, 6));
+
+}
 .cuerpo{
     /* width: 100%; */
-    padding: 20px 0;
+    position: relative;
+    padding: 0;
 }
 .cuerpo > div{
-    padding: 10px;
+    padding: 10px 5%;
 }
 .datos > div{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 30%;
+    width: 50%;
+    padding: 5%;
 }
 .datos span{
     display: block;
@@ -47,11 +56,7 @@
     width: 100%;
 }
 .datos > div > div > span:nth-child(n){
-    /* padding-right: 10px; */
     text-align: left;
-}
-.datos:nth-child(3){
-    background: red;
 }
 @media (max-width: 700px){
     .datos > div{
